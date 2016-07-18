@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WheelView">
+            <rect key="frame" x="0.0" y="0.0" width="286" height="286"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LuckyBaseBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="rzk-fY-hav">
+                    <rect key="frame" x="0.0" y="0.0" width="286" height="286"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LuckyRotateWheel.png" translatesAutoresizingMaskIntoConstraints="NO" id="kTt-V8-V49">
+                    <rect key="frame" x="0.0" y="0.0" width="286" height="286"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lH-Dg-tGC">
+                    <rect key="frame" x="103" y="103" width="81" height="81"/>
+                    <state key="normal" image="LuckyCenterButton.png"/>
+                    <state key="highlighted" image="LuckyCenterButtonPressed.png"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7lH-Dg-tGC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="LMh-8p-Ttc"/>
+                <constraint firstItem="7lH-Dg-tGC" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TFJ-hl-6NF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="centerView" destination="kTt-V8-V49" id="WUu-4J-BcL"/>
+            </connections>
+            <point key="canvasLocation" x="472" y="182"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="LuckyBaseBackground.png" width="286" height="286"/>
+        <image name="LuckyCenterButton.png" width="81" height="81"/>
+        <image name="LuckyCenterButtonPressed.png" width="81" height="81"/>
+        <image name="LuckyRotateWheel.png" width="286" height="286"/>
+    </resources>
+</document>
