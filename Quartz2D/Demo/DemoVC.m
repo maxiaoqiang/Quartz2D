@@ -89,6 +89,7 @@ NSString *const demo25Description = @"粒子效果";
     
     cell.titleLabel.text = [NSString stringWithFormat:@"demo-- %ld",indexPath.row];
     cell.contentLabel.text = [NSString stringWithFormat:@"%@",_contentArray[indexPath.row]];
+    cell.backgroundColor = [UIColor orangeColor];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
  
